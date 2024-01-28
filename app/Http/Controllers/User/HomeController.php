@@ -17,4 +17,17 @@ class HomeController extends Controller
     {
         return view('user.home.index');
     }
+
+    /**
+     * @return Factory|Application|View|\Illuminate\Contracts\Foundation\Application
+     */
+    public function contactUs(): Factory|Application|View|\Illuminate\Contracts\Foundation\Application
+    {
+        return view('user.contact.contact-us');
+    }
+
+    public function sendMessage()
+    {
+        // SEND CONTACT-US MESSAGE
+    }
 }

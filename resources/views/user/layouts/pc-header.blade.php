@@ -3,8 +3,8 @@
         <div class="row">
             <div class="col-lg-2 col-md-3 col-sm-4 col-5">
                 <div class="logo-area default">
-                    <a href="index.html">
-                        <img src="user/img/logo.png" alt="">
+                    <a href="{{ route('user.index') }}">
+                        <img src="{{ asset('user/img/logo.png') }}" alt="">
                     </a>
                 </div>
             </div>
@@ -12,7 +12,7 @@
                 <div class="search-area default">
                     <form action="#" class="search">
                         <input type="text" placeholder="جستجو">
-                        <button type="submit"><img src="user/img/search.png" alt=""></button>
+                        <button type="submit"><img src="{{ asset('user/img/search.png') }}" alt=""></button>
                     </form>
                 </div>
             </div>
@@ -41,7 +41,7 @@
 
                                     <div class="m_cart-item-content">
                                         <div class="m_cart-item-image">
-                                            <img src="user/img/product_img/p_6.jpg"/>
+                                            <img src="{{ asset('user/img/product_img/p_6.jpg') }}"/>
                                         </div>
                                         <div class="m_cart-item-details">
                                             <div class="m_cart-item-title">
@@ -76,7 +76,7 @@
                                             </div>
                                         </div>
                                         <div class="m_cart-item-image">
-                                            <img src="user/img/product_img/p_9.jpg"/>
+                                            <img src="{{ asset('user/img/product_img/p_9.jpg') }}"/>
                                         </div>
                                     </div>
                                 </a>
@@ -1349,7 +1349,7 @@
 
             <li class="list_style">
                 <i class="fa fa-phone icon-icon" aria-hidden="true"></i>
-                <a href="contact-us.html" class="list__link">تماس با ما</a>
+                <a href="{{ route('user.contact-us') }}" class="list__link">تماس با ما</a>
             </li>
 
             <li class="list_style">

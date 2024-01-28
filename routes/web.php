@@ -15,4 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 Route::prefix('/')->namespace('User')->group(function () {
     Route::get('/', [HomeController::class, 'index'])->name('user.index');
+    Route::prefix('/contact-us')->group(function () {
+        Route::get('/', [HomeController::class, 'contactUs'])->name('user.contact-us');
+        Route::post('/send', [HomeController::class, 'sendMessage'])->name('user.contact-us.send');
+    });
 });
