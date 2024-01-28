@@ -15,6 +15,6 @@ class HomeController extends Controller
      */
     public function index(): Factory|Application|View|\Illuminate\Contracts\Foundation\Application
     {
-        return view('user.index');
+        return view('user.home.index');
     }
 }
